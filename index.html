@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>weather app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- input city and Search -->
+        <div class="inputCity">
+            <input id="name" type="text" placeholder="City Name" style="text-align: center;">
+            <button class="submit-btn btn btn-danger">Search</button>
+        </div>
+        <!-- input city and Search End -->
+
+
+        <!--  country and flag  Start -->
+        <div class="country">
+            <div class="flag-svg">
+            <h5 >Flag</h5>
+            <img class="flag" src="./images/flag1.jpg" alt="flag">
+            </div>
+            <div class="cityDetails">
+                <h3>
+                    <span class="cityName">City</span>,
+                    <span class="countryName">Country</span>
+                </h3>
+
+                <p class="lat">Latitude :
+                     <span>00</span>
+                </p>
+
+                <p class="lon">Longitude : 
+                    <span>00</span>
+                </p>
+            </div>
+        </div>
+        <!--  country and flag  End -->
+
+
+        <!-- current Date  Start -->
+        <div class="currentDate">
+            <h3>Today</h3>
+            <p>Date Month Year</p>
+        </div>
+        <!-- current Date part End -->
+
+
+        <!--  sunrise and sunset time  Start -->
+        <div class="sunPosition">
+            <div class="sunrise">
+                <img src="./images/sunrise.jpg" alt="sunrise">
+                <div>
+                    <h3>Sunrise</h3>
+                    <p>Hour : Min : Sec AM</p>
+                </div>
+            </div>
+            <div class="sunset">
+                <img src="./images/sunset1.jpg" alt="sunset">
+                <div>
+                    <h3>Sunset</h3>
+                    <p>Hour : Min : Sec PM</p>
+                </div>
+            </div>
+        </div>
+        <!--  sunrise and sunset time  End -->
+
+
+        <!--  temperature Start -->
+        <div class="temperatureContainer">
+            <h1><span>00</span>°C</h1>
+            <div class="tempImg">
+                <img src="./images/no1.png" alt="weather-image">
+                <h3>Weather Review</h3>
+            </div>
+        </div>
+        <!--  temperature Start End -->
+
+
+        <!-- others temperature  Start -->
+        <div class="details">
+            <div class="tempDetails">
+                <p class="maxTemp">Max-temp : <span>00</span>°C</p>
+                <p class="minTemp">Min-temp : <span>00</span>°C</p>
+                <p class="feelTemp">Feels-like : <span>00</span>°C</p>
+            </div>
+            <div class="otherDetails">
+                <p class="humidity">Humidity : <span>00</span>%</p>
+                <p class="pressure">Pressure : <span>00</span> hPa</p>
+                <p class="wind">Wind-speed : <span>00</span> m/s</p>
+            </div>
+        </div>
+      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
